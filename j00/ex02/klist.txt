@@ -1,0 +1,5 @@
+Credentials cache: API:18433
+        Principal: marconte@42.FR
+
+		  Issued                Expires               Principal
+		  Jul  4 16:36:37 2016  Jul 11 16:36:28 2016  krbtgt/42.FR@42.FR
