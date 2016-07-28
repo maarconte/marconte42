@@ -1,37 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   aff_a.c                                            :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marconte <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/26 21:06:23 by marconte          #+#    #+#             */
-/*   Updated: 2016/07/28 17:37:27 by marconte         ###   ########.fr       */
+/*   Created: 2016/07/28 11:51:19 by marconte          #+#    #+#             */
+/*   Updated: 2016/07/28 11:54:13 by marconte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int		ft_aff(char *str)
+void	ft_swap(int *a, int *b)
 {
 	int i;
 
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] == 'a')
-		{
-			write(1,"a",1);
-			return (0);
-		}
-		i++;
-	}
-	return (1);
-}
-
-int		main(int ac, char **av)
-{
-	if (ac == 2)
-		ft_aff(av[1]);
-	write(1,"\n", 1);
-	return(0);
+	i = *a;
+	*a = *b;
+	*b = i;
 }
